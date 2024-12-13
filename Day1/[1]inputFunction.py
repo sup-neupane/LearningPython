@@ -1,6 +1,6 @@
 input("What's your name")
 
-#Syntax is imput("Prompt")
+#Syntax is input("Prompt")
 
 print("Hello " + input("What's Your Name") + "!")
 
