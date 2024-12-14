@@ -25,7 +25,7 @@ print(BMI_as_int)
 
 
 # Rounding
-# You can truncate the decimals using tyo // as:
+# You can truncate the decimals using two // as:
 # print(8 // 3)   #This prints 2
 
 # You may also use a round function to round off number
