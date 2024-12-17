@@ -29,3 +29,4 @@ for number in range(1,101):
     else:
         print(number)
 
+# Note: for step in range(6): This loops 6 times
