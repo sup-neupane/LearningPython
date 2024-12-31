@@ -49,6 +49,15 @@ nemo.swim()
 nemo.breathe()       
 print(nemo.num_eyes) 
 
+#We can slice a list and extract freagments as:
+my_list = ["a","b","c","d","e","f","g"]
+print(my_list[2:5])       #Prints c d and e as 2:5 gets element 2 to 4 (mind index 0)
+print(my_list[2:])        #This slices from 2 so a b is cut out rest are retained
+print(my_list[:2])        #This slices from 2 so a b is retained others are cut
+print(my_list[2:5:2])     #The last number gives increment in which the values are retained so it prints c and e
+print(my_list[::2])       #This prints every other items in list i.e. a c e g
+print(my_list[::-1])      #This reverses the list
 
+#All these above operations also works for tuples
 
 
