@@ -1,7 +1,7 @@
 from tkinter import *
 from tkinter import messagebox
 from random import randint, shuffle, choice
-import pyperclip
+import pyperclip # type: ignore
 import json
 # ---------------------------- PASSWORD GENERATOR ------------------------------- #
 def generate_password():
