@@ -1,0 +1,80 @@
+### Evaluating Machine Learning Models
+
+Evaluating the results of a machine learning model is as important as building one. Different problems and models require different evaluation metrics. Below are key metrics for classification and regression models:
+
+---
+
+Classification Model Evaluation Metrics/Techniques:
+
+1. Accuracy:
+   - The accuracy of the model in decimal form. Perfect accuracy is equal to 1.0.
+
+2. Precision:
+   - Indicates the proportion of positive identifications (model predicted class 1) which were actually correct.
+   - A model which produces no false positives has a precision of 1.0.
+
+3. Recall:
+   - Indicates the proportion of actual positives which were correctly classified.
+   - A model which produces no false negatives has a recall of 1.0.
+
+4. F1 Score:
+   - A combination of precision and recall.
+   - A perfect model achieves an F1 score of 1.0.
+
+5. Confusion Matrix:
+   - Compares the predicted values with the true values in a tabular way.
+   - If 100% correct, all values in the matrix will be on a diagonal line from top-left to bottom-right.
+
+6. Cross-Validation:
+   - Splits your dataset into multiple parts, trains and tests your model on each part, and evaluates performance as an average.
+
+7. Classification Report:
+   - A built-in function in Scikit-Learn called classification_report() returns metrics like precision, recall, and F1 score.
+
+8. ROC Curve:
+   - Receiver Operating Characteristic: a plot of the true positive rate versus the false-positive rate.
+
+9. Area Under Curve (AUC) Score:
+   - The area underneath the ROC curve.
+   - A perfect model achieves an AUC score of 1.0.
+
+---
+
+Which Classification Metric Should You Use?
+
+- Accuracy: Good if classes are balanced.
+- Precision: Focus when false positives are more severe than false negatives.
+- Recall: Focus when false negatives are more severe than false positives.
+- F1 Score: Use when precision and recall are equally important.
+- Confusion Matrix: Always a good way to visualize classification model performance.
+
+---
+
+Regression Model Evaluation Metrics/Techniques:
+
+1. R^2 (Coefficient of Determination):
+   - Compares your model's predictions to the mean of the targets.
+   - Values range from negative infinity (poor model) to 1 (perfect model).
+
+2. Mean Absolute Error (MAE):
+   - The average of the absolute differences between predictions and actual values.
+   - Provides an idea of how wrong your predictions were.
+
+3. Mean Squared Error (MSE):
+   - The average squared differences between predictions and actual values.
+   - Squaring amplifies outliers.
+
+---
+
+Which Regression Metric Should You Use?
+
+- R^2: Indicates overall performance, closer to 1.0 is better.
+- MAE: Use when you want a straightforward measure of error in the same unit as the target variable.
+- MSE: Use when larger errors should be penalized more heavily.
+
+---
+
+For more resources on evaluating a machine learning model, check out:
+- Scikit-Learn documentation for metrics and scoring.
+- "Beyond Accuracy: Precision and Recall" by Will Koehrsen.
+- Stack Overflow discussions on MSE and RMSE.
